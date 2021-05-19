@@ -1,0 +1,34 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
+            "harga": "Rp. 5.000.000",
+            "type": "BAN"
+        },
+        {
+            "id": 2,
+            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
+            "harga": "Rp. 2.350.000",
+            "type": "BAN"
+        },
+        {
+            "id": 3,
+            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
+            "harga": "Rp. 8.750.000",
+            "type": "BAN"
+        },
+        {
+            "id": 3,
+            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
+            "harga": "Rp. 8.000.000",
+            "type": "BAN"
+        },
+        {
+            "id": 4,
+            "nama": "Velg",
+            "harga": "Rp. 1.000.000",
+            "type": "VELG"
+        }
+    ]
+}

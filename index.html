@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Kembar Mandiri Jaya;">
-    <meta name = "keywords" content = "Kembar Mandiri Jaya, Ban, Velg, Bogor" />
+    <meta name="keywords" content="Kembar Mandiri Jaya, Ban, Velg, Bogor" />
     <meta name="author" content="Franz">
     <title>Ban</title>
     <!-- Bootstrap core CSS -->
@@ -83,9 +83,11 @@
                         <p class="mt-1">Produk Terlaris</p>
                     </div>
                     <div class="me-auto p-2 bd-highlight">
-                        <select class="form-select" style="border-radius: 0px;" aria-label="Default select example">
-                            <option selected>BAN</option>
-                            <option value="1">VELG</option>
+                        <select class="form-select" id="selectProduct" style="border-radius: 0px;"
+                            aria-label="Default select example">
+                            <option value="all" selected>SEMUA</option>
+                            <option value="ban">BAN</option>
+                            <option value="velg">VELG</option>
                         </select>
                     </div>
                     <div class="p-2 bd-highlight">
@@ -94,51 +96,8 @@
                 </div>
             </div>
 
-            <div class="row ">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-title bold">Yokohama Advan dB (Japan) V551 235/40 R18 91W</p>
-                            <p class="card-text bold" style="color: orange;">Rp. 2.350.000</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-title bold">Yokohama Advan dB (Japan) V551 235/40 R18 91W</p>
-                            <p class="card-text bold" style="color: orange;">Rp. 2.350.000</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-title bold">Yokohama Advan dB (Japan) V551 235/40 R18 91W</p>
-                            <p class="card-text bold" style="color: orange;">Rp. 2.350.000</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-title bold">Yokohama Advan dB (Japan) V551 235/40 R18 91W</p>
-                            <p class="card-text bold" style="color: orange;">Rp. 2.350.000</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="product">
+
             </div>
 
             <div class="row my-4">
@@ -261,8 +220,8 @@
                 incididunt ut labore.</span>
             <div class="col-md-12 my-5">
                 <center>
-                    <a type="button" class="btn"
-                        style="background: #ff8242; color: white; border-radius: 0px;">Hubungi Kami</a>
+                    <a type="button" class="btn" style="background: #ff8242; color: white; border-radius: 0px;">Hubungi
+                        Kami</a>
                 </center>
             </div>
             <hr style="color: white;">
@@ -273,6 +232,70 @@
     <script>
         $(function () {
             $('#header').load('components/navbar.html')
+        });
+        let allData = '';
+        let product;
+        fetch("db_product/product.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                product = data.product;
+                product.forEach(element => {
+                    allData += `
+                    <div class= "col-md-3 mt-2">
+                        <div class="card">
+                            <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    `
+                });
+                $('#product').append(allData)
+            });
+
+        $('#selectProduct').on('change', function () {
+            allData = '';
+            $('#product').html('')
+            product.forEach(element => {
+                if (element.type === this.value.toUpperCase()) {
+                    allData += `
+                        <div class= "col-md-3 mt-2">
+                            <div class="card">
+                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        `
+                }
+                if (this.value.toUpperCase() === "ALL") {
+                    allData += `
+                        <div class= "col-md-3 mt-2">
+                            <div class="card">
+                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        `
+                }
+            });
+            console.log(allData)
+            $('#product').append(allData)
         });
     </script>
 </body>
