@@ -248,7 +248,7 @@
                             <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
                                 <p class="card-text bold" style="color: orange;">${element.harga}</p>
                                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
@@ -270,7 +270,7 @@
                                 <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
                                     <p class="card-text bold" style="color: orange;">${element.harga}</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
@@ -285,7 +285,7 @@
                                 <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <a href="detail-product.html" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
                                     <p class="card-text bold" style="color: orange;">${element.harga}</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
@@ -294,7 +294,6 @@
                         `
                 }
             });
-            console.log(allData)
             $('#product').append(allData)
         });
     </script>

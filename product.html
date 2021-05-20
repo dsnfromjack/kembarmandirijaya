@@ -64,10 +64,11 @@
                                         <p class="mt-1">SEMUA PRODUK</p>
                                     </div>
                                     <div class="me-auto p-2 bd-highlight">
-                                        <select class="form-select" style="border-radius: 0px;"
+                                        <select class="form-select" id="selectProduct" style="border-radius: 0px;"
                                             aria-label="Default select example">
-                                            <option selected>BAN</option>
-                                            <option value="1">VELG</option>
+                                            <option value="all" selected>SEMUA</option>
+                                            <option value="ban">BAN</option>
+                                            <option value="velg">VELG</option>
                                         </select>
                                     </div>
                                     <div class="p-2 bd-highlight">
@@ -113,22 +114,67 @@
         $(function () {
             $('#header').load('components/navbar.html')
         });
-        let card = `<div class= "col-md-4 mt-2">
-                <div class="card">
-                    <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                        class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="detail-product.html" class="card-title bold" style="text-decoration: none">Yokohama Advan dB (Japan) V551 235/40 R18 91W</a>
-                            <p class="card-text bold" style="color: orange;">Rp. 2.350.000</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        let allData = '';
+        let product;
+        fetch("db_product/product.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                product = data.product;
+                product.forEach(element => {
+                    allData += `
+                    <div class= "col-md-3 mt-2">
+                        <div class="card">
+                            <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    `
+                });
+                $('#product').append(allData)
+            });
+
+        $('#selectProduct').on('change', function () {
+            allData = '';
+            $('#product').html('')
+            product.forEach(element => {
+                if (element.type === this.value.toUpperCase()) {
+                    allData += `
+                        <div class= "col-md-3 mt-2">
+                            <div class="card">
+                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
                             </div>
-                </div>`
-        let allData = ''
-        for(let i=0; i<9; i++){
-            allData += card
-        }
-        $(function () {
+                        </div>
+                        `
+                }
+                if (this.value.toUpperCase() === "ALL") {
+                    allData += `
+                        <div class= "col-md-3 mt-2">
+                            <div class="card">
+                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        `
+                }
+            });
             $('#product').append(allData)
         })
     </script>

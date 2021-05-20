@@ -35,8 +35,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                    class="card-img-top" alt="...">
+                <img id="prod_img" src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+                    class="img img-fluid" alt="...">
             </div>
             <div class="col-md-6">
                 <h3 class="mt-5">Yokohama Advan dB (Japan) V551 235/40 R18 91W</h3>
@@ -44,12 +44,12 @@
                     <tr>
                         <td>Merk</td>
                         <td>: </td>
-                        <td>Yokohama</td>
+                        <td id="prod_name">Yokohama</td>
                     </tr>
                     <tr>
                         <td>Tipe</td>
                         <td>: </td>
-                        <td>V551 235/40 R18 91W</td>
+                        <td id="prod_type">V551 235/40 R18 91W</td>
                     </tr>
                     <tr>
                         <td>Ketersediaan Stok</td>
@@ -57,7 +57,7 @@
                         <td>sisa 21 unit</td>
                     </tr>
                 </table>
-                <h4 class="text-warning">Rp. 3.499.000</h4>
+                <h4 class="text-warning" id="prod_price">Rp. 3.499.000</h4>
                 <br><br>
                 <button type="button" class="btn btn-success px-4" style="padding: 10px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -76,9 +76,10 @@
                 <p class="bold">&ensp;INFORMASI PRODUK</p>
                 <table class="table table-responsive table-borderless">
                     <tr>
-                        <td class="bold">Description</td>
+                        <td class="bold" style="width: 20%;">Description</td>
                         <td></td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <td id="prod_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -92,7 +93,7 @@
                     <tr>
                         <td class="bold">Misal</td>
                         <td></td>
-                        <td>
+                        <td id="prod_o_image">
                             <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
                                 class="border" style="width: 60px;height: 60px;" alt="...">
                             <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
@@ -124,6 +125,28 @@
         $(function () {
             $('#header').load('components/navbar.html')
         });
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const prod_id = urlParams.get('page');
+        let other_image = '';
+        fetch("db_product/product.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                const result = data.product.filter(element => element.id === parseInt(prod_id))
+                $('#prod_name').html(result[0].nama);
+                $('#prod_price').html(result[0].harga);
+                $('#prod_description').html(result[0].description);
+                $('#prod_img').attr('src', result[0].img);
+                $('#prod_type').html(result[0].type_product);
+                for (o_img of result[0].other_img) {
+                    other_image += `<img src="${o_img}"
+                        class="border" style="width: 70px;height: 70px; margin: 2px" alt="...">`
+                }
+                $('#prod_o_image').html(other_image)
+            });
+
     </script>
 </body>
 

@@ -4,31 +4,72 @@
             "id": 1,
             "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
             "harga": "Rp. 5.000.000",
-            "type": "BAN"
+            "type_product": "V551 235/40 R18 91W",
+            "type": "BAN",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+            "other_img": [
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+            ]
         },
         {
             "id": 2,
             "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
             "harga": "Rp. 2.350.000",
-            "type": "BAN"
+            "type_product": "V551 235/40",
+            "type": "BAN",
+            "description": "Lorem ipsum dolor sit amet, xzczxczxc adipiscing elit, sed",
+            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+            "other_img": [
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+            ]
         },
         {
             "id": 3,
             "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
             "harga": "Rp. 8.750.000",
-            "type": "BAN"
+            "type_product": "V551 R18 91W",
+            "type": "BAN",
+            "description": "Lorem ipsum dolor sit amet, cculpa qui fqefqeazxcxzc deserunt mollit anim id est laborum.",
+            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+            "other_img": [
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+            ]
         },
         {
             "id": 3,
             "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
             "harga": "Rp. 8.000.000",
-            "type": "BAN"
+            "type_product": "V551 235/40 91W",
+            "type": "BAN",
+            "description": "Lorem ipsum dolor n proident, sunt in fafdafqef laborum.",
+            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+            "other_img": [
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+            ]
         },
         {
             "id": 4,
             "nama": "Velg",
             "harga": "Rp. 1.000.000",
-            "type": "VELG"
+            "type_product": "235/40 R18 91W",
+            "type": "VELG",
+            "description": "Velg Bagus",
+            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+            "other_img": [
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
+                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
+            ]
         }
     ]
 }

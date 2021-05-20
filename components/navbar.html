@@ -8,9 +8,10 @@
 
     <div class="nav col-12 col-md-6 mb-2 justify-content-center mb-md-0">
         <div class="input-group ">
-            <input type="text" class="form-control" style="border-radius: 0px;" placeholder="Recipient's username"
-                aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-warning" style="border-radius: 0px;" type="button" id="button-addon2">Cari</button>
+            <input type="text" class="form-control" style="border-radius: 0px;" placeholder="Cari velg atau ban"
+                aria-label="Cari velg atau ban" aria-describedby="button-addon2" id="search">
+            <button onclick="searchProduct()" class="btn btn-warning" style="border-radius: 0px;" type="button"
+                id="btn-search">Cari</button>
         </div>
     </div>
 
@@ -30,3 +31,25 @@
     </ul>
     <div class="col-md-1"></div>
 </header>
+
+<script>
+    function searchProduct() {
+        const value = document.getElementById('search').value
+        fetch("../db_product/product.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                // console.log(data.product)
+                const result = data.product.filter(element => element.nama.toUpperCase().includes(value.toUpperCase()))
+                console.log(result)
+            });
+    }
+    var input = document.getElementById("search");
+    input.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("btn-search").click();
+        }
+    });
+</script>
