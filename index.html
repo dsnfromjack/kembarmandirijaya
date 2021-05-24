@@ -2,301 +2,279 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kembar Mandiri Jaya;">
-    <meta name="keywords" content="Kembar Mandiri Jaya, Ban, Velg, Bogor" />
-    <meta name="author" content="Franz">
-    <title>Ban</title>
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/jquery.js"></script>
-    <style>
-        .bold {
-            font-weight: bold;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kembar Mandiri Jaya;">
+  <meta name="keywords" content="Kembar Mandiri Jaya, Ban, Velg, Bogor" />
+  <meta name="author" content="Franz">
+  <title>Ban</title>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/js/jquery.js"></script>
+  <style>
+    .bold {
+      font-weight: bold;
+    }
 
-        .carousel-inner .carousel-item {
-            height: 600px;
-            background-size: cover;
-            background-position: center center;
-        }
+    .card {
+      border-radius: 0px;
+      border-width: 1px;
+    }
 
-        .card {
-            border-radius: 0px;
-            border-width: 1px;
-        }
-
-        .card-img-top {
-            background: #fafbfe;
-        }
-
-        .layer {
-            background-color: rgba(248, 247, 216, 0.7);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    .card-img-top {
+      background: #fafbfe;
+    }
+  </style>
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://www.w3schools.com/bootstrap/la.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://refrez.com/wp-content/uploads/2018/03/contoh-iklan-instagram-carousel.png"
-                    class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.w3schools.com/bootstrap/la.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+  <div id="header"></div>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/images/banner/banner1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/images/banner/banner2.png"
+          class="d-block w-100" alt="...">
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <!-- Banner Here -->
+  <!-- Banner Here -->
+  <div class="container">
+    <img src="assets/merk.png" class="d-block w-100" alt="...">
+  </div>
+
+  <!-- Product List -->
+  <div style="background: #fafbfe;">
     <div class="container">
-        <img src="assets/merk.png" class="d-block w-100" alt="...">
+      <div class="row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <p class="mt-1">Produk Terlaris</p>
+          </div>
+          <div class="me-auto p-2 bd-highlight">
+            <select class="form-select rounded-0" id="selectProduct" aria-label="Default select example">
+              <option value="all" selected>SEMUA</option>
+              <option value="ban">BAN</option>
+              <option value="velg">VELG</option>
+            </select>
+          </div>
+          <div class="p-2 bd-highlight">
+            <!-- <p>tems 1-9 of 124</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="product">
+
+      </div>
+
+      <div class="row my-4">
+        <div class="col-md-12">
+          <center>
+            <a type="button" class="btn button-primary-bg">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div class="position-relative">
+      <div class="position-relative overflow-hidden text-center" style="background-image: url('assets/Rectangle 104.png');
+                box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.76);">
+        <div class="col-md-5 p-md-2 mx-auto my-5">
+          <h3 class="fw-normal text-white">MENGAPA KAMI?</h3>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+      <div class="mt-2" style="position: relative!important; z-index: 100; bottom: 50px">
+        <div class="container bg-white border border-1 rounded">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="py-3">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="assets/clock.svg" width="50" height="50" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <p><span class="bold">PENGIRIMAN SELURUH INDONESIA</span><br>
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="py-3">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="assets/clock.svg" width="50" height="50" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <p><span class="bold">HARGA KOMPETITIF DAN TERJANGKAU</span><br>
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="py-3">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="assets/clock.svg" width="50" height="50" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <p><span class="bold">RESPON CEPAT PENJUAL</span><br>
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Product List -->
-    <div style="background: #fafbfe;">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex bd-highlight">
-                    <div class="p-2 bd-highlight">
-                        <p class="mt-1">Produk Terlaris</p>
-                    </div>
-                    <div class="me-auto p-2 bd-highlight">
-                        <select class="form-select" id="selectProduct" style="border-radius: 0px;"
-                            aria-label="Default select example">
-                            <option value="all" selected>SEMUA</option>
-                            <option value="ban">BAN</option>
-                            <option value="velg">VELG</option>
-                        </select>
-                    </div>
-                    <div class="p-2 bd-highlight">
-                        <p>items 1-9 of 124</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="product">
-
-            </div>
-
-            <div class="row my-4">
-                <div class="col-md-12">
-                    <center>
-                        <a type="button" class="btn"
-                            style="background: #ff8242; color: white; border-radius: 0px;">Selengkapnya</a>
-                    </center>
-                </div>
-            </div>
-        </div>
-        <div class="position-relative">
-            <div class="position-relative overflow-hidden text-center" style="background-image: url('assets/Rectangle 104.png');
+    <div class="position-relative" style="height: 600px;">
+      <div>
+        <div class="position-relative overflow-hidden text-center" style="background-image: url('assets/Rectangle 104.png');
                 box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.76);">
-                <div class="col-md-5 p-md-2 mx-auto my-5">
-                    <h3 class="fw-normal text-white">MENGAPA KAMI?</h3>
-                </div>
-                <div class="product-device shadow-sm d-none d-md-block"></div>
-                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-            </div>
-            <div class="mt-2" style="position: relative!important; z-index: 100; bottom: 50px">
-                <div class="container bg-white border border-1 rounded">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="py-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/clock.svg" width="50" height="50" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <p><span class="bold">PENGIRIMAN SELURUH INDONESIA</span><br>
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="py-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/clock.svg" width="50" height="50" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <p><span class="bold">HARGA KOMPETITIF DAN TERJANGKAU</span><br>
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="py-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/clock.svg" width="50" height="50" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <p><span class="bold">RESPON CEPAT PENJUAL</span><br>
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-5 p-md-2 mx-auto my-5">
+            <h3 class="fw-normal text-white">HUBUNGI KAMI</h3>
+          </div>
+          <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-
-        <div class="position-relative" style="height: 600px;">
-            <div>
-                <div class="position-relative overflow-hidden text-center" style="background-image: url('assets/Rectangle 104.png');
-                box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.76);">
-                    <div class="col-md-5 p-md-2 mx-auto my-5">
-                        <h3 class="fw-normal text-white">HUBUNGI KAMI</h3>
-                    </div>
-                    <div class="product-device shadow-sm d-none d-md-block"></div>
-                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-                </div>
-                <iframe
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.307820572145!2d106.96800861802525!3d-6.3228581079364785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69925afc74a125%3A0x397ed0bb136c356b!2sKembar%20Mandiri%20Jaya!5e0!3m2!1sid!2sid!4v1621504689468!5m2!1sid!2sid"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="mt-2" style="position: relative!important; z-index: 100; bottom: 500px">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-4 bg-white">
-                            <div class="py-4 ">
-                                <center>
-                                    <img src="assets/clock.svg" width="50" height="50" alt="..."><br>
-                                    <p>KEMBAR MANDIRI JAYA<br>
-                                        Jl. Letda Natsir, Bojong Kulur, <br>Kec. Gn. Putri, Bogor, Jawa Barat<br>
-                                        16969</p>
-                                </center>
-                            </div>
-                        </div>
-                        <div class="col-md-4 bg-white">
-                            <div class="py-4">
-                                <center>
-                                    <img src="assets/clock.svg" width="50" height="50" alt="..."><br>
-                                    <p>EDISMAN MANIHURUK
-                                        0821-2408-8007<br><br>
-                                        Jam Buka: Senin - Minggu, 24 Jam</p>
-                                </center>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer mt-auto py-5 bg-dark">
-        <div class="container text-center">
-            <h4><span class="text-white">Lorem ipsum dolor sit amet?</span></h4>
-            <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore.</span>
-            <div class="col-md-12 my-5">
+        <iframe <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.307820572145!2d106.96800861802525!3d-6.3228581079364785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69925afc74a125%3A0x397ed0bb136c356b!2sKembar%20Mandiri%20Jaya!5e0!3m2!1sid!2sid!4v1621504689468!5m2!1sid!2sid"
+          width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="mt-2" style="position: relative!important; z-index: 100; bottom: 500px">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 bg-white">
+              <div class="py-4 ">
                 <center>
-                    <a type="button" class="btn" style="background: #ff8242; color: white; border-radius: 0px;">Hubungi
-                        Kami</a>
+                  <img src="assets/clock.svg" width="50" height="50" alt="..."><br>
+                  <p>KEMBAR MANDIRI JAYA<br>
+                    Jl. Letda Natsir, Bojong Kulur, <br>Kec. Gn. Putri, Bogor, Jawa Barat<br>
+                    16969</p>
                 </center>
+              </div>
             </div>
-            <hr style="color: white;">
-            <p class="text-white">©2021 Kembar Mandiri Jaya | All Rights Reserved</p>
+            <div class="col-md-4 bg-white">
+              <div class="py-4">
+                <center>
+                  <img src="assets/clock.svg" width="50" height="50" alt="..."><br>
+                  <p>EDISMAN MANIHURUK
+                    0821-2408-8007<br><br>
+                    Jam Buka: Senin - Minggu, 24 Jam</p>
+                </center>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
         </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <script>
-        $(function () {
-            $('#header').load('components/navbar.html')
-        });
-        let allData = '';
-        let product;
-        fetch("db_product/product.json")
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                product = data.product;
-                product.forEach(element => {
-                    allData += `
-                    <div class= "col-md-3 mt-2">
-                        <div class="card">
-                            <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
-                                <p class="card-text bold" style="color: orange;">${element.harga}</p>
-                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    `
-                });
-                $('#product').append(allData)
-            });
+      </div>
+    </div>
+  </div>
 
-        $('#selectProduct').on('change', function () {
-            allData = '';
-            $('#product').html('')
-            product.forEach(element => {
-                if (element.type === this.value.toUpperCase()) {
-                    allData += `
-                        <div class= "col-md-3 mt-2">
-                            <div class="card">
-                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
-                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
-                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        `
-                }
-                if (this.value.toUpperCase() === "ALL") {
-                    allData += `
-                        <div class= "col-md-3 mt-2">
-                            <div class="card">
-                                <img src="https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
-                                    <p class="card-text bold" style="color: orange;">${element.harga}</p>
-                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        `
-                }
-            });
-            $('#product').append(allData)
+  <footer class="footer mt-auto py-5 bg-dark">
+    <div class="container text-center">
+      <h4><span class="text-white">Lorem ipsum dolor sit amet?</span></h4>
+      <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore.</span>
+      <div class="col-md-12 my-5">
+        <center>
+          <a type="button" class="btn button-primary-bg">Hubungi
+            Kami</a>
+        </center>
+      </div>
+      <hr style="color: white;">
+      <p class="text-white">©2021 Kembar Mandiri Jaya | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('components/navbar.html')
+    });
+    let allData = '';
+    let product;
+    fetch("db_product/product.json")
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        product = data.product;
+        product.forEach(element => {
+          allData += `
+            <div class= "col-md-3 mt-2">
+                <div class="card">
+                    <img src=${element.img}
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                        <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            `
         });
-    </script>
+        $('#product').append(allData)
+      });
+
+    $('#selectProduct').on('change', function () {
+      allData = '';
+      $('#product').html('')
+      product.forEach(element => {
+        if (element.type.toUpperCase() === this.value.toUpperCase()) {
+          allData += `
+            <div class= "col-md-3 mt-2">
+                <div class="card">
+                    <img src=${element.img}
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                        <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            `
+        }
+        if (this.value.toUpperCase() === "ALL") {
+          allData += `
+          <div class= "col-md-3 mt-2">
+              <div class="card">
+                  <img src=${element.img}
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                      <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+              </div>
+          </div>
+          `
+        }
+      });
+      $('#product').append(allData)
+    });
+  </script>
 </body>
 
 </html>

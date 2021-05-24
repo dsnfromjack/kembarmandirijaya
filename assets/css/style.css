@@ -1,0 +1,17 @@
+.primary-background {
+    background-color: #ff8242;
+}
+.primary-color {
+    color: #ff8242;
+}
+.button-primary-bg {
+    border-radius: 0px; 
+    color: white; 
+    background-color: #ff8242;
+}
+
+.carousel-inner .carousel-item {
+    /* height: 600px; */
+    background-size: cover;
+    background-position: center center;
+}

@@ -1,75 +1,200 @@
 {
-    "product": [
-        {
-            "id": 1,
-            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
-            "harga": "Rp. 5.000.000",
-            "type_product": "V551 235/40 R18 91W",
-            "type": "BAN",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-            "other_img": [
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-            ]
-        },
-        {
-            "id": 2,
-            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
-            "harga": "Rp. 2.350.000",
-            "type_product": "V551 235/40",
-            "type": "BAN",
-            "description": "Lorem ipsum dolor sit amet, xzczxczxc adipiscing elit, sed",
-            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-            "other_img": [
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-            ]
-        },
-        {
-            "id": 3,
-            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
-            "harga": "Rp. 8.750.000",
-            "type_product": "V551 R18 91W",
-            "type": "BAN",
-            "description": "Lorem ipsum dolor sit amet, cculpa qui fqefqeazxcxzc deserunt mollit anim id est laborum.",
-            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-            "other_img": [
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-            ]
-        },
-        {
-            "id": 3,
-            "nama": "Yokohama Advan dB (Japan) V551 235/40 R18 91W",
-            "harga": "Rp. 8.000.000",
-            "type_product": "V551 235/40 91W",
-            "type": "BAN",
-            "description": "Lorem ipsum dolor n proident, sunt in fafdafqef laborum.",
-            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-            "other_img": [
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-            ]
-        },
-        {
-            "id": 4,
-            "nama": "Velg",
-            "harga": "Rp. 1.000.000",
-            "type_product": "235/40 R18 91W",
-            "type": "VELG",
-            "description": "Velg Bagus",
-            "img": "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-            "other_img": [
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png",
-                "https://www.goodyear-indonesia.com/wp-content/uploads/Blue-streak-stilletto.png"
-            ]
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "nama": "Falken 175/65/14",
+      "type_filter": "Ring 14",
+      "merk": "Falken",
+      "type_product": "175/65/14",
+      "harga": "475.000",
+      "wa": "https://bit.ly/3fbuZH2",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring14.png",
+      "other_img": [
+        "assets/images/products/Ring14.png"
+      ]
+    },
+    {
+      "id": 2,
+      "nama": "Falken 185/70/14",
+      "type_filter": "Ring 14",
+      "merk": "Falken",
+      "type_product": "185/70/14",
+      "harga": "500.000",
+      "wa": "https://bit.ly/3bO4hCy",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring14.png",
+      "other_img": [
+        "assets/images/products/Ring14.png"
+      ]
+    },
+    {
+      "id": 3,
+      "nama": "Falken 185/65/15",
+      "type_filter": "Ring 15",
+      "merk": "Falken",
+      "type_product": "185/65/15",
+      "harga": "550.000",
+      "wa": "https://bit.ly/3yvFLjm",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring15.png",
+      "other_img": [
+        "assets/images/products/Ring15.png"
+      ]
+    },
+    {
+      "id": 4,
+      "nama": "Falken Ziex 215/45/17",
+      "type_filter": "Ring 17",
+      "merk": "Falken",
+      "type_product": "215/45/17",
+      "harga": "800.000",
+      "wa": "https://bit.ly/34d8MlD",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring17.png",
+      "other_img": [
+        "assets/images/products/Ring17.png"
+      ]
+    },
+    {
+      "id": 5,
+      "nama": "Hankook 185/70/14",
+      "type_filter": "Ring 14",
+      "merk": "Hankook",
+      "type_product": "185/70/14",
+      "harga": "530.000",
+      "wa": "https://bit.ly/3oCJHdi",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring14.png",
+      "other_img": [
+        "assets/images/products/Ring14.png"
+      ]
+    },
+    {
+      "id": 6,
+      "nama": "Hankook 185/65/15",
+      "type_filter": "Ring 15",
+      "merk": "Hankook",
+      "type_product": "185/65/15",
+      "harga": "550.000",
+      "wa": "https://bit.ly/344PIpE",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring15.png",
+      "other_img": [
+        "assets/images/products/Ring15.png"
+      ]
+    },
+    {
+      "id": 7,
+      "nama": "Hankook 185/55/16",
+      "type_filter": "Ring 15",
+      "merk": "Hankook",
+      "type_product": "185/55/16",
+      "harga": "600.000",
+      "wa": "https://bit.ly/3f7NKeA",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring16.png",
+      "other_img": [
+        "assets/images/products/Ring16.png"
+      ]
+    },
+    {
+      "id": 8,
+      "nama": "Hankook 195/50/16",
+      "type_filter": "Ring 16",
+      "merk": "Hankook",
+      "type_product": "195/50/16",
+      "harga": "625.000",
+      "wa": "https://bit.ly/2Sig9G0",
+      "type": "Ban",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/Ring16.png",
+      "other_img": [
+        "assets/images/products/Ring16.png"
+      ]
+    },
+    {
+      "id": 9,
+      "nama": "Velg Volk Rays 15",
+      "type_filter": "Ring 15",
+      "merk": "Rays",
+      "type_product": "4x100-LBR 7-Et 38",
+      "harga": "3.700.000",
+      "wa": "https://bit.ly/348ubfP",
+      "type": "Velg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/velkvolkrays15.png",
+      "other_img": [
+        "assets/images/products/velkvolkrays15.png"
+      ]
+    },
+    {
+      "id": 10,
+      "nama": "Velg Avanza Veloz Pako",
+      "type_filter": "Ring 15",
+      "merk": "Toyota Veloz",
+      "type_product": "4x114-Ring 15",
+      "harga": "3.700.000",
+      "wa": "https://bit.ly/3hLKTtq",
+      "type": "Velg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/velgAvanzaVelozPako.png",
+      "other_img": [
+        "assets/images/products/velgAvanzaVelozPako.png"
+      ]
+    },
+    {
+      "id": 11,
+      "nama": "Velg Rays Ring FORGED (Blue Machine)",
+      "type_filter": "Ring 16",
+      "merk": "Rays",
+      "type_product": "4x100-LBR 6,5-Et 35-Ring 15",
+      "harga": "3.700.000",
+      "wa": "https://bit.ly/3u823nB",
+      "type": "Velg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/velgRaysRingForged.png",
+      "other_img": [
+        "assets/images/products/velgRaysRingForged.png"
+      ]
+    },
+    {
+      "id": 12,
+      "nama": "Velg Ssr Type C",
+      "type_filter": "Ring 16",
+      "merk": "Ssr",
+      "type_product": "4x100,114-LBR 7-Et 38-Ring 16",
+      "harga": "4.600.000",
+      "wa": "https://bit.ly/3yw88h9",
+      "type": "Velg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/velgSsrTypeC.png",
+      "other_img": [
+        "assets/images/products/velgSsrTypeC.png"
+      ]
+    },
+    {
+      "id": 13,
+      "nama": "Velg VIP Modular Wheels",
+      "type_filter": "Ring 17",
+      "merk": "VIP Modular",
+      "type_product": "4x100,114-LBR 7,5/8,5-Et 42/38-Ring 17",
+      "harga": "5.200.000",
+      "wa": "https://bit.ly/3fwHRGU",
+      "type": "Velg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "img": "assets/images/products/velgVIPModular.png",
+      "other_img": [
+        "assets/images/products/velgVIPModular.png"
+      ]
+    }
+  ]
 }
+
