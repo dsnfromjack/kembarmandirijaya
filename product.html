@@ -15,6 +15,7 @@
     .bold {
       font-weight: bold;
     }
+
     ul {
       list-style-type: none;
     }
@@ -30,7 +31,8 @@
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html" class="text-primary bold" style="text-decoration: none;">Home</a>
+          <li class="breadcrumb-item"><a href="index.html" class="text-primary bold"
+              style="text-decoration: none;">Home</a>
           </li>
           <li class="breadcrumb-item active bold" aria-current="page">Produk</li>
         </ol>
@@ -46,25 +48,25 @@
               KATEGORI<br><br>
               <p class="bold">Type</p>
               <ul>
-                <li>All</li>
-                <li>Ring 14</li>
-                <li>Ring 15</li>
-                <li>Ring 16</li>
-                <li>Ring 17</li>
+                <li><a href="product.html">All</a></li>
+                <li><a href="product.html?filter=Ring 14&kategori=type">Ring 14</a></li>
+                <li><a href="product.html?filter=Ring 15&kategori=type">Ring 15</a></li>
+                <li><a href="product.html?filter=Ring 16&kategori=type">Ring 16</a></li>
+                <li><a href="product.html?filter=Ring 17&kategori=type">Ring 17</a></li>
               </ul>
               <p class="bold">Merk Ban</p>
               <ul>
-                <li>All</li>
-                <li>Falken</li>
-                <li>Hankook</li>
+                <li><a href="product.html?filter=Ban">All</a></li>
+                <li><a href="product.html?filter=Falken&kategori=merk">Falken</a></li>
+                <li><a href="product.html?filter=Hankook&kategori=merk">Hankook</a></li>
               </ul>
               <p class="bold">Merk Velg</p>
               <ul>
-                <li>All</li>
-                <li>Rays</li>
-                <li>Ssr</li>
-                <li>VIP Modular</li>
-                <li>Toyota Veloz</li>
+                <li><a href="product.html?filter=Velg">All</a></li>
+                <li><a href="product.html?filter=Rays&kategori=merk">Rays</a></li>
+                <li><a href="product.html?filter=Ssr&kategori=merk">Ssr</a></li>
+                <li><a href="product.html?filter=VIP Modular&kategori=merk">VIP Modular</a></li>
+                <li><a href="product.html?filter=Toyota Veloz&kategori=merk">Toyota Veloz</a></li>
               </ul>
             </div>
           </div>
@@ -81,7 +83,7 @@
                     <select class="form-select rounded-0" id="selectProduct" aria-label="Default select example">
                       <option value="all" selected>SEMUA</option>
                       <option value="ban">BAN</option>
-                      <option value="velg">VELG</option>
+                      <option value="velg" >VELG</option>
                     </select>
                   </div>
                   <div class="p-2 bd-highlight" id="clrFilter">
@@ -92,9 +94,9 @@
               </div>
             </div>
           </div>
-          <div class="row" id="product">
+          <div class="row mb-4" id="product">
           </div>
-          <nav aria-label="Page navigation example" class="justify-content-center">
+          <!-- <nav aria-label="Page navigation example" class="justify-content-center">
             <ul class="pagination my-5">
               <li class="page-item ml-2"><a class="page-link" href="#">Previous</a></li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -102,7 +104,7 @@
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
-          </nav>
+          </nav> -->
         </div>
       </div>
     </div>
@@ -124,6 +126,7 @@
     </div>
   </footer>
   <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+
   <script>
     let allData = '';
     let product;
@@ -133,7 +136,7 @@
     $(function () {
       $('#header').load('components/navbar.html')
     });
-
+    // Search Query Result
     fetch("db_product/product.json")
       .then(response => {
         return response.json();
@@ -143,6 +146,65 @@
         if (urlParams.get('q')) {
           product.forEach(element => {
             if (element.nama.toUpperCase().includes(urlParams.get('q').toUpperCase())) {
+              allData += `
+                <div class= "col-md-3 mt-2">
+                    <div class="card">
+                        <img src=${element.img}
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                            <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                `
+            }
+          });
+        } else if (urlParams.get('filter') && urlParams.get('kategori')) {
+          const filter = urlParams.get('filter')
+          const kategori = urlParams.get('kategori')
+          if (kategori.toUpperCase() === "TYPE") {
+            product.forEach(element => {
+              if (filter.toUpperCase() === element.type_filter.toUpperCase()) {
+                allData += `
+                <div class= "col-md-3 mt-2">
+                    <div class="card">
+                        <img src=${element.img}
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                            <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                `
+              }
+            });
+          } else if (kategori.toUpperCase() === 'MERK') {
+            product.forEach(element => {
+              if (filter.toUpperCase() === element.merk.toUpperCase()) {
+                allData += `
+                <div class= "col-md-3 mt-2">
+                    <div class="card">
+                        <img src=${element.img}
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                            <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                `
+              }
+            });
+          }
+        } else if (urlParams.get('filter')) {
+          const filter = urlParams.get('filter')
+          product.forEach(element => {
+            if (filter.toUpperCase() === element.type.toUpperCase()) {
               allData += `
                 <div class= "col-md-3 mt-2">
                     <div class="card">
@@ -178,7 +240,7 @@
         }
         $('#product').append(allData)
       });
-
+    // Dropdown
     $('#selectProduct').on('change', function () {
       allData = '';
       $('#product').html('')
