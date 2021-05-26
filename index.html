@@ -11,6 +11,8 @@
 
   <link rel="icon" href="favicon.png" type="image/png" />
   
+
+  <link rel="icon" href="assets/images/public/favicon.png">
   <!-- Bootstrap core CSS -->
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="assets/js/jquery.js"></script>
@@ -90,7 +92,7 @@
       <div class="row my-4">
         <div class="col-md-12">
           <center>
-            <a type="button" class="btn button-primary-bg">Selengkapnya</a>
+            <a href="product.html?filter=ban" type="button" class="btn button-primary-bg">Selengkapnya</a>
           </center>
         </div>
       </div>
@@ -115,8 +117,7 @@
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p><span class="bold">PENGIRIMAN SELURUH<br> INDONESIA</span><br>
-                      Lorem ipsum dolor sit amet, consectetur
-                      adipiscing</p>
+                      Kembar Mandiri jaya melayani pengiriman ke seluruh wilayah Indonesia</p>
                   </div>
                 </div>
               </div>
@@ -129,8 +130,7 @@
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p><span class="bold">HARGA KOMPETITIF DAN TERJANGKAU</span><br>
-                      Lorem ipsum dolor sit amet, consectetur
-                      adipiscing</p>
+                      Mampu bersaing dengan kompetitor dengan harga produk yang murah dan berkualitas</p>
                   </div>
                 </div>
               </div>
@@ -143,8 +143,7 @@
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p><span class="bold">RESPON CEPAT <br>PENJUAL</span><br>
-                      Lorem ipsum dolor sit amet, consectetur
-                      adipiscing</p>
+                      Berkomitmen memberikan pengalaman berbelanja yang nyaman melalui proses dan respon yang cepat dari penjual</p>
                   </div>
                 </div>
               </div>
@@ -201,12 +200,11 @@
 
   <footer class="footer mt-auto py-5 bg-dark">
     <div class="container text-center">
-      <h4><span class="text-white">Lorem ipsum dolor sit amet?</span></h4>
-      <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore.</span>
+      <h2><span class="text-white">Anda Mencari Velg atau Ban Mobil?</span></h2>
+      <span class="text-white">Jika anda mencari Velg atau Ban murah dan berkualitas, kami adalah solusinya. Hubungi kami sekarang</span>
       <div class="col-md-12 my-5">
         <center>
-          <a type="button" class="btn button-primary-bg">Hubungi
+          <a href="https://bit.ly/3vqHR1Y" type="button" class="btn button-primary-bg">Hubungi
             Kami</a>
         </center>
       </div>
@@ -230,6 +228,7 @@
         product.forEach(element => {
           allData += `
             <div class= "col-md-3 mt-2">
+              <a href="detail-product.html?page=${element.id}">
                 <div class="card">
                     <img src=${element.img}
                         class="card-img-top" alt="...">
@@ -239,6 +238,7 @@
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
+              </a>
             </div>
             `
         });
@@ -252,6 +252,7 @@
         if (element.type.toUpperCase() === this.value.toUpperCase()) {
           allData += `
             <div class= "col-md-3 mt-2">
+              <a href="detail-product.html?page=${element.id}">
                 <div class="card">
                     <img src=${element.img}
                         class="card-img-top" alt="...">
@@ -261,23 +262,26 @@
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
+              </a>
             </div>
             `
         }
         if (this.value.toUpperCase() === "ALL") {
           allData += `
-          <div class= "col-md-3 mt-2">
-              <div class="card">
-                  <img src=${element.img}
-                      class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
-                      <p class="card-text bold" style="color: orange;">${element.harga}</p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-              </div>
-          </div>
-          `
+            <div class= "col-md-3 mt-2">
+              <a href="detail-product.html?page=${element.id}">
+                <div class="card">
+                    <img src=${element.img}
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="detail-product.html?page=${element.id}" class="card-title bold" style="text-decoration: none">${element.nama}</a>
+                        <p class="card-text bold" style="color: orange;">${element.harga}</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+              </a>
+            </div>
+            `
         }
       });
       $('#product').append(allData)
